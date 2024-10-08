@@ -1,5 +1,7 @@
 # Sandbox
 
+Serveur: https://inetlab-lorawan.icube.unistra.fr
+
 ```bash
 > DevEUI=`echo "CAFEBABE$(openssl rand -hex 4)"`
 > echo $DevEUI
