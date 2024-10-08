@@ -96,3 +96,6 @@ Uplink Counter: 5
 ![](images/chirpstack4-dashboard-01.png)
 ![](images/chirpstack4-gateways-01.png)
 ![](images/chirpstack4-gateways-02.png)
+
+![](images/chirpstack4-device-queue-01.png)
+![](images/chirpstack4-device-queue-02.png)
