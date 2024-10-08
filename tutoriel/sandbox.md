@@ -88,3 +88,11 @@ Uplink Counter: 5
 ![](images/chirpstack4-device-events-02.png)
 ![](images/chirpstack4-device-activation-01.png)
 ![](images/chirpstack4-device-dashboard-01.png)
+
+![](images/chirpstack4-device-profile-01.png)
+![](images/chirpstack4-device-profile-02.png)
+![](images/chirpstack4-device-events-03.png)
+
+![](images/chirpstack4-dashboard-01.png)
+![](images/chirpstack4-gateways-01.png)
+![](images/chirpstack4-gateways-02.png)
