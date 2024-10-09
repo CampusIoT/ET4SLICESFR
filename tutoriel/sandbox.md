@@ -99,3 +99,40 @@ Uplink Counter: 5
 
 ![](images/chirpstack4-device-queue-01.png)
 ![](images/chirpstack4-device-queue-02.png)
+
+
+![](images/chirpstack4-integration-01.png)
+![](images/chirpstack4-nodered-mqtt-01.png)
+![](images/chirpstack4-nodered-mqtt-02.png)
+![](images/chirpstack4-integration-influxdb-01.png)
+![](images/chirpstack4-integration-thingsboard-01.png)
+![](images/chirpstack4-integration-semtech-01.png)
+
+npm i @crapougnax/cayennelpp
+
+// const { LPPEncoder, LPPDecoder } = await import("@crapougnax/cayennelpp");
+import { LPPEncoder,LPPDecoder } from  '@crapougnax/cayennelpp'
+
+const encoder = new LPPEncoder()
+encoder.addTemperature(1, 33.0)
+encoder.addTemperature(2, -50.0)
+const buffer = encoder.getPayload();
+console.log('base64 =',buffer.toString('base64'),', hex =',buffer.toString('hex'));
+
+const decoder = new LPPEncoder(buffer)
+decoder.decode()
+const temperature1 = decoder.getChannel(1).temperature
+
+
+
+
+
+
+
+const decoder = new LPPEncoder(buffer)
+decoder.decode()
+const temperature1 = decoder.getChannel(1).temperature
+
+
+
+https://github.com/ElectronicCats/CayenneLPP/blob/master/decoders/decoder.js
