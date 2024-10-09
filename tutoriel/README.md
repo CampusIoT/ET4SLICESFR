@@ -19,6 +19,12 @@ Dans ce tutoriel, l'infrastructure de réseau LoRaWAN est opéré par l'Universi
 * [Communications dans un réseau des capteurs LoRaWAN (notions avancées)](07b.md)
 * [Collecte, stockage et affichage des mesures de capteurs LoRaWAN](08.md)
 
+## Bonus
+
+* [Hébergement d'un LNS pour un réseau privé](14.md)
+* [Développement de micro-logiciel pour les terminaux LoRaWAN](15.md)
+* [Misc](15.md)
+
 ## Liens utiles
 Si vous souhaitez approfondir la programmation de terminaux avec RIOT OS
 * [Cours sur RIOT OS en anglais](https://github.com/RIOT-OS/riot-course)
