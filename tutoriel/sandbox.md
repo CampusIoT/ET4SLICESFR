@@ -24,13 +24,9 @@ reboot               Reboot the node
 version              Prints current RIOT_VERSION
 > loramac
 Usage: loramac <get|set|join|tx|link_check|save|erase>
-> loramac set appeui CAFEBABE00000001
-> loramac set appkey CAFEBABE56bed43e
-Usage: loramac set appkey <32 hex chars>
-> loramac set appkey 3cff3fb1d65a251f1ab24b5a7b6c1c2d
-> loramac set deveui 3cff3fb1d65a251f1ab24b5a7b6c1c2d
-Usage: loramac set deveui <16 hex chars>
 > loramac set deveui CAFEBABE56bed43e
+> loramac set appeui CAFEBABE00000001
+> loramac set appkey 3cff3fb1d65a251f1ab24b5a7b6c1c2d
 > loramac
 Usage: loramac <get|set|join|tx|link_check|save|erase>
 > loramac save
