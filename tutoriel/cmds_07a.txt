@@ -1,0 +1,62 @@
+loramac set deveui CAFEBABE56bed43e
+loramac set appeui CAFEBABE00000001
+loramac set appkey 3cff3fb1d65a251f1ab24b5a7b6c1c2d
+loramac save
+loramac set adr on
+loramac set dr 5
+loramac join otaa
+
+loramac get devaddr
+loramac get nwkskey
+loramac get appskey
+loramac get ul_cnt
+
+loramac tx HELLO\ 001 cnf 11
+loramac link_check
+loramac get ul_cnt
+loramac tx HELLO\ 002 cnf 11
+loramac link_check
+loramac get ul_cnt
+loramac tx HELLO\ 003 cnf 11
+loramac get ul_cnt
+
+loramac set dr 0
+loramac link_check
+loramac tx HELLO\ 004 uncnf 11
+loramac get dr
+loramac get ul_cnt
+loramac tx HELLO\ 005 uncnf 11
+loramac get dr
+loramac get ul_cnt
+
+loramac set adr off
+loramac set dr 0
+loramac link_check
+loramac tx HELLO\ 006 cnf 11
+loramac get dr
+loramac tx HELLO\ 007 cnf 11
+loramac get dr
+loramac set adr on
+loramac tx HELLO\ 007 cnf 11
+loramac get dr
+
+
+
+
+reboot
+loramac set dr 5
+loramac set adr on
+loramac get class
+loramac set class C
+loramac save
+loramac join otaa
+
+
+loramac get rx2_freq
+loramac get rx2_dr
+loramac set rx2_dr 3
+loramac get rx2_dr
+
+
+loramac_txhex 016700C80268C80373232804794650 uncnf 20
+loramac_txhex 0167FED4026864037303E804797D00 uncnf 20
